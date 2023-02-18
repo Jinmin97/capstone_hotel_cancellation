@@ -35,7 +35,7 @@ Benefit: Additional revenue => Cost of an additional room = $103
 The worst case scenario in using the model would be that the hotel is overbooked. Assuming there are x rooms, the hotel will be earning $103 * x = $103x. When we factor in the compensation the hotel needs to pay to those they did not honour the rooms to, (0.15x based on 1-precision (also known as the % of time the model will predict that customer will cancel when in fact they did not)), the total revenue is $103x - ($123)*0.15x = $84.55x.
 
 **Model was not used**
-If we did not use the model, based on global average occupancy rates, the hotel would be operating at 65% - 80% capacity ([source]: https://hoteltechreport.com/news/occupancy-rate)). For simplity, we will take the occupancy rate as 75%. The total revenue would be $103*0.75x = $77.25x
+If we did not use the model, based on global average occupancy rates, the hotel would be operating at 65% - 80% capacity. For simplity, we will take the occupancy rate as 75%. The total revenue would be $103*0.75x = $77.25x
 
 **Revenue comparison**
 With a precision of 85%, the XGBoost model will generate an increase of ~9.5% revenue
