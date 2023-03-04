@@ -12,7 +12,7 @@ The dataset is taken from Kaggle [here](https://www.kaggle.com/datasets/ahsan81/
 
 We will be comparing three different classification algorithms: **Logistic Regression**, **Random Forest Classification** and **XGBoost**
 
-After tuning the hyperparameters for each algorithms, the XGBoost classifier yielded the best results, with a F1 score of ~75%. 
+After tuning the hyperparameters for each algorithms, the XGBoost classifier yielded the best results, with a F1 score of ~80%. 
 
 Modelling Process: 
 
@@ -32,10 +32,10 @@ Cost: Compensation to the customer => one night's stay + transportation cost to 
 Benefit: Additional revenue => Cost of an additional room = $103
 
 **Model was used**
-The worst case scenario in using the model would be that the hotel is overbooked. Assuming there are x rooms, the hotel will be earning $103 * x = $103x. When we factor in the compensation the hotel needs to pay to those they did not honour the rooms to, (0.15x based on 1-precision (also known as the % of time the model will predict that customer will cancel when in fact they did not)), the total revenue is $103x - ($123)*0.15x = $84.55x.
+The worst case scenario in using the model would be that the hotel is overbooked. Assuming there are x rooms, the hotel will be earning $103 * x = $103x. When we factor in the compensation the hotel needs to pay to those they did not honour the rooms to (hotels might overbook its room by up to 15% - ([source]: https://hsb.shr.global/learning-center/overbooking-howtodoittherightway), the total revenue is $103x - ($123)*0.15x = $84.55x.
 
 **Model was not used**
-If we did not use the model, based on global average occupancy rates, the hotel would be operating at 65% - 80% capacity. For simplity, we will take the occupancy rate as 75%. The total revenue would be $103*0.75x = $77.25x
+If we did not use the model, based on global average occupancy rates, the hotel would be operating at 65% - 80% capacity ([source]: https://hoteltechreport.com/news/occupancy-rate)). For simplity, we will take the occupancy rate as 75%. The total revenue would be $103*0.75x = $77.25x
 
 **Revenue comparison**
 With a precision of 85%, the XGBoost model will generate an increase of ~9.5% revenue
@@ -43,8 +43,7 @@ With a precision of 85%, the XGBoost model will generate an increase of ~9.5% re
     
 ### Conclusions/Recommendations
 
-**Conclusion:**
-
-
-**Recommendations:**
+- Motivate employees to accommodate special requests of the guests (employee of the month, increased performance bonus etc)
+- Open the booking slots nearer to the date of stay to reduce the lead time 
+- Make membership more attractive to attract guests to make repeated stays 
 
